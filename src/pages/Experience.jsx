@@ -86,7 +86,7 @@ export const Experience = () => {
       <section className='bg-gray-900 overflow-hidden'>
         <div className='mx-auto px-5 sm:w-11/12 xl:w-3/4 2xl:w-2/3 py-12 lg:py-10 flex flex-col flex-no-wrap border-b-2 border-gray-600'>
           <h2 className='mt-0 mb-4 text-white text-2xl sm:text-3xl font-extrabold'>
-            Mine præferencer à la stærke sider
+            Mine præferencer à la stærke sider :)
           </h2>
           <section className='flex flex-col md:flex-row flex-wrap'>
             <FavoriteSkill text='Java' percentage={50} />
