@@ -1,0 +1,63 @@
+/* React */
+import React, { forwardRef, ReactNode } from 'react';
+import App from './Test';
+
+const Section1 = forwardRef<HTMLDivElement>((props, ref) => {
+  // Here goes the content of our component
+  return (
+    <div className='bg-gray-900 h-screen w-full'>
+      <section className='h-full overflow-hidden flex justify-center items-center'>
+        <div className='mx-auto px-5 sm:w-11/12 xl:w-3/4 2xl:w-2/3 py-12 xl:py-20'>
+          <div className='max-w-xl mx-auto px-5'>
+            <div className='flex justify-center items-center'>
+              <span
+                className='text-sm font-black uppercase text-center text-gray-500 dark:text-gray-400'
+                style={{ letterSpacing: '0.35em' }}
+              >
+                Velkommen, mit navn er
+              </span>
+            </div>
+
+            <h1 className='text-center text-[48px] font-black mb-4 pb-1 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500 '>
+              Simon Winther
+            </h1>
+            <p className='text-lg sm:text-xl text-center leading-7 sm:leading-8 text-gray-700 dark:text-gray-300'>
+              Datalogi-studerende på København Universitet
+            </p>
+            <div className='flex justify-center items-center flex-col sm:flex-row mt-6'>
+              <a
+                href='https://www.linkedin.com/in/simon-winther-36b643220/'
+                className='py-3 mx-2 my-2 rounded-full font-bold leading-none translate-hover-2 hover:shadow-lg transition-all ease-in-out duration-150 px-5 bg-pink-500 text-white hover:bg-pink-600 hover:text-white'
+              >
+                Kontakt Mig
+              </a>
+            </div>
+            <div className='flex justify-center items-center m-5'>
+              <div
+                className='m-5 flex flex-col justify-center items-center hover:cursor-pointer space-y-4'
+                onClick={() => {
+                  if (ref && 'current' in ref && ref.current) {
+                    window.scrollTo({
+                      top: ref?.current?.offsetTop,
+                      behavior: 'smooth',
+                    });
+                  }
+                }}
+              >
+                <div>
+                  <h1 className='text-white text-2xl'>Rul ned</h1>
+                </div>
+                <img
+                  src={require('../assets/scroll_down.png')}
+                  className='m-2 animate-pulse animate-bounce w-10 h-10'
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+});
+
+export default Section1;
