@@ -24,7 +24,7 @@ const MyHistory = () => {
       </section>
       <div className='mx-auto px-5 sm:w-11/12 xl:w-3/4 2xl:w-2/3 py-12 lg:py-20 flex flex-col space-y-4 flex-no-wrap items-start border-b-2 border-gray-600'>
         {/* Subtract 33% because it's the width of the div (w-1/3) */}
-        <div className='bg-[#67ecd0] p-5 w-1/3 lg:ml-[calc(100%-33%)] flex items-center rounded-md shadow-[#76EDD4] shadow-lg'>
+        <div className='bg-[#67ecd0] p-5 w-full lg:w-1/3 lg:ml-[calc(100%-33%)] flex items-center rounded-md shadow-[#76EDD4] shadow-lg'>
           <div className='flex-1 mr-5'>
             <h1 className='text-gray-900 font-thin text-lg'>
               BS.c. Computer Science
@@ -36,7 +36,7 @@ const MyHistory = () => {
           <h1 className='text-gray-800 font-thin text-xl'>22 ~</h1>
         </div>
         {/* Subtract 33% because it's the width of the div (w-1/3) */}
-        <div className='bg-[#67ecd0] p-5 w-1/3 lg:ml-[calc(66%-33%)] flex items-center rounded-md shadow-[#76EDD4] shadow-lg'>
+        <div className='bg-[#67ecd0] p-5 w-full lg:w-1/3 lg:ml-[calc(66%-33%)] flex items-center rounded-md shadow-[#76EDD4] shadow-lg'>
           <div className='flex-1 mr-5'>
             <h1 className='text-gray-900 font-thin text-lg'>Sabbatår</h1>
             <h1 className='text-gray-700 font-light text-lg'>
@@ -46,7 +46,7 @@ const MyHistory = () => {
           </div>
           <h1 className='text-gray-800 font-thin text-xl'>21-22</h1>
         </div>
-        <div className='bg-[#67ecd0] p-5 w-1/3 flex items-center rounded-md shadow-[#76EDD4] shadow-lg'>
+        <div className='bg-[#67ecd0] p-5 w-full lg:w-1/3 flex items-center rounded-md shadow-[#76EDD4] shadow-lg'>
           <div className='flex-1 mr-5'>
             <h1 className='text-gray-900 font-thin text-lg'>Autodidakt</h1>
             <h1 className='text-gray-700 font-light text-lg'>
