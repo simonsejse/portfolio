@@ -1,6 +1,5 @@
 /* React */
 import React, { forwardRef, ReactNode } from 'react';
-import App from './Test';
 
 const Section1 = forwardRef<HTMLDivElement>((props, ref) => {
   // Here goes the content of our component

@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Dot from '../components/Dot';
 
 export const Experience = () => {
   return (
     <>
-      <section className='bg-white dark:bg-gray-900 overflow-hidden'>
+      <section className='bg-gray-900 overflow-hidden'>
         <div className='mx-auto px-5 sm:w-11/12 xl:w-3/4 2xl:w-2/3 py-12 xl:py-20'>
           <div className='max-w-xl mx-auto px-5'>
             <div className='mb-4'>
@@ -89,8 +89,8 @@ export const Experience = () => {
             Mine præferencer à la stærke sider
           </h2>
           <section className='flex flex-col md:flex-row flex-wrap'>
-            <FavoriteSkill text='Java' percentage={100} />
-            <FavoriteSkill text='JavaScript' percentage={50} />
+            <FavoriteSkill text='Java' percentage={50} />
+            <FavoriteSkill text='JavaScript' percentage={30} />
             <FavoriteSkill text='Spring Boot' percentage={25} />
             <FavoriteSkill text='React' percentage={25} />
             <FavoriteSkill text='React Native' percentage={25} />
@@ -107,12 +107,8 @@ const FavoriteSkill = ({ text, percentage }) => {
       <h1 className='ml-4 text-white text-lg sm:text-xl font-extrabold'>
         {text}
       </h1>
-      <div className='relative bg-gray-700 rounded-sm shadow-orange-500 shadow-lg'>
-        <img
-          src={require('../assets/star.png')}
-          className='absolute w-10 h-10 top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2'
-        />
-        <div className={`w-[50%] z-50 h-2 bg-orange-500 rounded-sm p-3`} />
+      <div className='bg-gray-700 rounded-sm '>
+        <div className={`w-[80%] z-50 h-2 bg-orange-500 rounded-sm p-3`} />
       </div>
     </div>
   );
