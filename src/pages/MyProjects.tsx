@@ -4,7 +4,7 @@ export default function MyProjects() {
   return (
     <>
       <section className='bg-gray-900 overflow-hidden'>
-        <div className='mx-auto px-5 sm:w-11/12 xl:w-3/4 2xl:w-2/3 py-12 xl:py-20'>
+        <div className='mx-auto px-5 sm:w-11/12 xl:w-3/4 2xl:w-2/3 py-12'>
           <div className='max-w-xl mx-auto px-5'>
             <div className='mb-4'>
               <div className='flex justify-center items-center'>

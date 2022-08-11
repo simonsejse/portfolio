@@ -4,13 +4,18 @@ import React, { forwardRef, ReactNode } from 'react';
 const Section1 = forwardRef<HTMLDivElement>((props, ref) => {
   // Here goes the content of our component
   return (
-    <div className='bg-gray-900 h-screen w-full'>
+    <div className='relative h-screen w-full'>
+      <div className='absolute w-full h-full bg-white inset-0 -z-20 ' />
+      <img
+        src={require('../assets/bg.gif')}
+        className='absolute bottom-0 w-full -z-10'
+      />
       <section className='h-full overflow-hidden flex justify-center items-center'>
         <div className='mx-auto px-5 sm:w-11/12 xl:w-3/4 2xl:w-2/3 py-12 xl:py-20'>
           <div className='max-w-xl mx-auto px-5'>
             <div className='flex justify-center items-center'>
               <span
-                className='text-sm font-black uppercase text-center text-gray-500 dark:text-gray-400'
+                className='text-sm font-black uppercase text-center text-gray-900 '
                 style={{ letterSpacing: '0.35em' }}
               >
                 Velkommen, mit navn er
@@ -20,7 +25,7 @@ const Section1 = forwardRef<HTMLDivElement>((props, ref) => {
             <h1 className='text-center text-[48px] font-black mb-4 pb-1 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500 '>
               Simon Winther
             </h1>
-            <p className='text-lg sm:text-xl text-center leading-7 sm:leading-8 text-gray-700 dark:text-gray-300'>
+            <p className='text-lg sm:text-xl text-center leading-7 sm:leading-8 text-gray-700'>
               Datalogi-studerende på København Universitet
             </p>
             <div className='flex justify-center items-center flex-col sm:flex-row mt-6'>
@@ -33,7 +38,7 @@ const Section1 = forwardRef<HTMLDivElement>((props, ref) => {
             </div>
             <div className='flex justify-center items-center m-5'>
               <div
-                className='m-5 flex flex-col justify-center items-center hover:cursor-pointer space-y-4'
+                className='m-5 flex flex-col justify-center items-center hover:cursor-pointer space-y-8 font-mono text-md bg-white p-7 rounded-2xl shadow-lg'
                 onClick={() => {
                   if (ref && 'current' in ref && ref.current) {
                     window.scrollTo({
@@ -44,7 +49,7 @@ const Section1 = forwardRef<HTMLDivElement>((props, ref) => {
                 }}
               >
                 <div>
-                  <h1 className='text-white text-2xl'>Rul ned</h1>
+                  <h1 className='text-black text-2xl'>Rul ned</h1>
                 </div>
                 <img
                   src={require('../assets/scroll_down.png')}
